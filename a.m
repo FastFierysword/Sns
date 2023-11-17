@@ -1,0 +1,18 @@
+clear all;
+close all;
+clc;
+x=linspace(-1,1,100);
+y=sqrt (1-(x.^2));
+a=linspace(2,4,100);
+b=sqrt(1-(a-2).^2);
+c=linspace(1,1.5,25);
+y1=2.*(c);
+d=linspace(1.5,2,25);
+y2=(d-2)./0.5;
+z1=[x c];
+z2=[z1 d];
+z=[z2 a];
+q1=[y y1];
+q2=[q1 y2];
+q=[q2 b];
+plot(z, q);
